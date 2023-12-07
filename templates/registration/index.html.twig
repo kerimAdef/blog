@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Utilisateur{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Créer un compte</h1>
+
+        {{ form_start(form, {'attr': {'id': 'new_edit_utilisateur'}}) }}
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="mb-3">
+                    {{ form_label(form.email, 'Email') }}
+                    {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_label(form.username, 'Username') }}
+                    {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_label(form.password.first, 'Password') }}
+                    {{ form_widget(form.password.first, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_label(form.password.second, 'Confirm Password') }}
+                    {{ form_widget(form.password.second, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_label(form.age, 'Age') }}
+                    {{ form_widget(form.age, {'attr': {'class': 'form-control'}}) }}
+                </div>
+                <div class="mb-3">
+                    {{ form_label(form.sex, 'Sex') }}
+                    {{ form_widget(form.sex, {'attr': {'class': 'form-check-input'}}) }}
+                </div>
+                <button class="btn btn-success btn-block">{{ button_label|default('Save') }}</button>
+            </div>
+        </div>
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

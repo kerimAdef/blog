@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<header class="text-light p-3">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Logo à gauche -->
+      <img src="../images/logo.png" alt="Logo">
+
+      <!-- Boutons "Inscription" et "Connexion" à droite -->
+    <div>
+      <a href="{{ path('app_utilisateur_new') }}" class="btn btn-custom me-2">Inscription</a>
+      <a href="{{ path('app_login') }}" class="btn btn-custom">Connexion</a>
+  </div>
+   </div
+    </div>
+  </header>
+  <!-- contenu -->
+    <div>
+      <img class="acceuil_image" src="../images/header.jpg" alt="Logo">
+    </div>
+    <div class="description"></div>
+<!-- description -->
+<div class=" feature-section">
+        <div class="row">
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card feature-card text-center">
+                    <img src="../images/article.jpg" class="card-img-top" alt="publication d'article">
+                        <div class="card-body">
+                            <i class="fas fa-shopping-cart feature-icon"></i>
+                            <h3 class="card-title">Publication d'article</h3>
+                            <p class="card-text feature-description">Partagez Votre Voix : Exprimez-vous en publiant des articles sur des sujets qui vous passionnent. Notre plateforme offre un espace pour partager vos idées, conseils et découvertes avec une audience engagée.
+                        </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Section Repas -->
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card feature-card text-center">
+                    <img src="../images/article.jpg" class="card-img-top" alt="repas Image">
+                        <div class="card-body">
+                            <i class="fas fa-utensils feature-icon"></i>
+                            <h3 class="card-title">Évaluation des Articles :</h3>
+                            <p class="card-text feature-description">
+                                Donnez Votre Avis : L'opinion de chaque membre de notre communauté compte. Évaluez les articles qui vous touchent, inspirent ou éduquent. 
+                        </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Section Sport -->
+
+            <div class="col-md-4">
+                <a href="#" class="card-link">
+                    <div class="card feature-card text-center">
+                    <img src="../images/article.jpg" class="card-img-top" alt="repas Image">
+                        <div class="card-body">
+                            <i class="fas fa-utensils feature-icon"></i>
+                            <h3 class="card-title">Évaluation des Articles :</h3>
+                            <p class="card-text feature-description">
+                                Donnez Votre Avis : L'opinion de chaque membre de notre communauté compte. Évaluez les articles qui vous touchent, inspirent ou éduquent. 
+                        </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <h1>FAQ - DistriCall</h1>
+
+  <details>
+    <summary>Qu'est-ce que DistriCall ?</summary>
+    <p>DistriCall est une plateforme de communication professionnelle qui offre des services de numéros fixes redirigés vers des téléphones mobiles. Il simplifie la gestion des appels pour les entreprises.</p>
+  </details>
+
+  <details>
+    <summary>Comment puis-je obtenir un numéro fixe sur DistriCall ?</summary>
+    <p>Pour obtenir un numéro fixe sur DistriCall, vous pouvez vous inscrire sur notre site web et suivre le processus de configuration. Une fois inscrit, vous pourrez choisir votre numéro fixe.</p>
+  </details>
+
+  <details>
+    <summary>Quels sont les avantages de l'utilisation de DistriCall ?</summary>
+    <p>DistriCall offre une flexibilité accrue pour les entreprises en redirigeant les appels vers des numéros mobiles. Cela permet une meilleure accessibilité et une gestion plus efficace des communications professionnelles.</p>
+  </details>
+  <details>
+    <summary>Quelles mesures prenez-vous pour garantir la confidentialité des données?</summary>
+            La confidentialité et la sécurité des données sont notre priorité. Nous utilisons des protocoles de sécurité avancés et respectons strictement toutes les normes de confidentialité.
+  </details>
+
+  <footer class="text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Formulaire de contact -->
+          <form>
+            <h5>Contactez-nous</h5>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <!-- Informations de copyright et liens sociaux -->
+          <div class="text-end">
+            <p>&copy; 2023 Districall</p>
+            <div>
+              <a href="#" class="text-light me-2">X</a>
+              <a href="#" class="text-light me-2">Instagram</a>
+              <a href="#" class="text-light">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    
+{% endblock %}
